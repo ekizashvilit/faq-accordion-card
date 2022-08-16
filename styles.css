@@ -1,0 +1,153 @@
+/* FONT STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    min-width: 20.438rem;
+    margin: 0 1.5rem;
+    min-height: 33.438rem;
+    position: relative;
+}
+
+.img-woman {
+    position: absolute;
+    top: -6.688rem;
+    width: 15rem;
+    left: 2.563rem;
+}
+
+.img-shadow {
+    position: absolute;
+    left: 2.563rem;
+}
+
+.info {
+    margin: 8.125rem 1.563rem 3rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #4B4C5F;
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    transition: 0.5s;
+    font-family: inherit;
+  }
+  
+  .active, .accordion:hover {
+    color: #F47B56;
+  }
+  
+  .accordion:after {
+    content: url(images/icon-arrow-down.svg);
+    float: right;
+  }
+  
+  .active:after {
+    content: url(images/icon-arrow-down.svg);
+    transform: rotate(180deg);
+  }
+  
+  .panel {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+    font-size: 12px;
+    color: #787887;
+    line-height: 18px;
+    max-height: 0;
+  }
+
+  hr.line {
+    border: 0;
+    height: 1px;
+    background: #E8E8EA;
+  }
+
+  .desktop-woman, .desktop-box, .desktop-shadow {
+    display: none;
+  }
+
+@media (min-width: 925px) {
+    .img-shadow, .img-woman {
+        display: none;
+    }
+
+    .card {
+        min-height: 31.813rem;
+        min-width: 57.5rem;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        max-width: 21.25rem;
+        margin: auto auto;
+    }
+
+    .desktop-woman {
+        display: block;
+        position: absolute;
+        top: 4.813rem;
+        left: -5.375rem;
+    }
+
+    .desktop-box {
+        display: block;
+        position: absolute;
+        left: -5.75rem;
+        top: 13.125rem;
+    }
+
+    .desktop-shadow {
+        display: block;
+        position: absolute;
+        top: -18.25rem;
+        left: -36.063rem;
+    }
+    
+    .images {
+        width: 400px;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        
+    }
+
+    body {
+        text-align: left;
+    }
+    
+}
