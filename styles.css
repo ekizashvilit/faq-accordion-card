@@ -33,16 +33,17 @@ body {
     position: absolute;
     top: -6.688rem;
     width: 15rem;
-    left: 2.563rem;
+    left: 2.625rem;
 }
 
 .img-shadow {
     position: absolute;
-    left: 2.563rem;
+    left: 2.625rem;
 }
 
 .info {
     margin: 8.125rem 1.563rem 3rem;
+    padding-top: 8.375rem;
 }
 
 h1 {
@@ -107,6 +108,7 @@ h1 {
         min-width: 57.5rem;
         display: flex;
         overflow: hidden;
+        z-index: 0;
     }
 
     .info {
@@ -114,6 +116,7 @@ h1 {
         flex-direction: column;
         max-width: 21.25rem;
         margin: auto auto;
+        padding-top: 0;
     }
 
     .desktop-woman {
@@ -126,8 +129,9 @@ h1 {
     .desktop-box {
         display: block;
         position: absolute;
-        left: -5.75rem;
+        left: -4.25rem;
         top: 13.125rem;
+        z-index: 1;
     }
 
     .desktop-shadow {
@@ -148,6 +152,12 @@ h1 {
 
     body {
         text-align: left;
+    }
+
+    .for-box {
+        min-height: 31.813rem;
+        min-width: 57.5rem;
+        position: relative;
     }
     
 }
