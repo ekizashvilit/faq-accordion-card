@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ekizashvilit.github.io/faq-accordion-card/)
+- Live Site URL: [FAQ accordion card](https://ekizashvilit.github.io/faq-accordion-card/)
 
 ## Author
 
